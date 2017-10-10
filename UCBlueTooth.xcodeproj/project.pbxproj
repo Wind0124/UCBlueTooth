@@ -66,6 +66,10 @@
 		A23750981F8CA1A100400BA2 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		A23750991F8CA1A100400BA2 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		A237509B1F8CA40D00400BA2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A237509C1F8CA9B400400BA2 /* CUPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUPopView.m; sourceTree = "<group>"; };
+		A237509D1F8CA9B400400BA2 /* CUPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUPopView.h; sourceTree = "<group>"; };
+		A237509E1F8CAB0100400BA2 /* HandleTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HandleTool.m; sourceTree = "<group>"; };
+		A237509F1F8CAB0100400BA2 /* HandleTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandleTool.h; sourceTree = "<group>"; };
 		A531F373DED1FFF3AEE7AAA6 /* Pods-UCBlueTooth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCBlueTooth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UCBlueTooth/Pods-UCBlueTooth.debug.xcconfig"; sourceTree = "<group>"; };
 		C1506FA2FDF8B44B42F2AAD7 /* Pods-UCBlueTooth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCBlueTooth.release.xcconfig"; path = "Pods/Target Support Files/Pods-UCBlueTooth/Pods-UCBlueTooth.release.xcconfig"; sourceTree = "<group>"; };
 		F106FC37FFEEC7F52CEB111F /* Pods-UCBlueToothUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCBlueToothUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UCBlueToothUITests/Pods-UCBlueToothUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,7 +136,6 @@
 				A23750901F8C9A1300400BA2 /* StroyBoard */,
 				A23750931F8C9AA500400BA2 /* UIFunction */,
 				A23750941F8C9CBD00400BA2 /* General */,
-				A23750911F8C9A3700400BA2 /* Resources */,
 				A23750921F8C9A6300400BA2 /* Supporting Files */,
 			);
 			path = UCBlueTooth;
@@ -165,17 +168,10 @@
 			path = StroyBoard;
 			sourceTree = "<group>";
 		};
-		A23750911F8C9A3700400BA2 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				A23750671F8C980100400BA2 /* Assets.xcassets */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		A23750921F8C9A6300400BA2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A23750671F8C980100400BA2 /* Assets.xcassets */,
 				A237506C1F8C980100400BA2 /* Info.plist */,
 				A237506D1F8C980100400BA2 /* main.m */,
 				A23750641F8C980100400BA2 /* UCBlueTooth.xcdatamodeld */,
@@ -206,6 +202,8 @@
 		A23750951F8C9CE500400BA2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A237509F1F8CAB0100400BA2 /* HandleTool.h */,
+				A237509E1F8CAB0100400BA2 /* HandleTool.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -213,6 +211,8 @@
 		A23750971F8CA14F00400BA2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A237509D1F8CA9B400400BA2 /* CUPopView.h */,
+				A237509C1F8CA9B400400BA2 /* CUPopView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";

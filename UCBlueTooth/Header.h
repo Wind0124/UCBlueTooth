@@ -9,15 +9,6 @@
 #ifndef Header_h
 #define Header_h
 
-
-
-
-
-
-
-
-
-
 // Debug时打印Log，发布时禁止打印Log
 //http://blog.csdn.net/win_mary/article/details/52813991
 #ifdef DEBUG
