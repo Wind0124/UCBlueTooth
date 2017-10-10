@@ -1,18 +1,18 @@
 //
-//  ViewController.m
+//  MainViewController.m
 //  UCBlueTooth
 //
 //  Created by Wind on 2017/10/10.
 //  Copyright © 2017年 Wind. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MainViewController.h"
 
-@interface ViewController ()
+@interface MainViewController ()
 
 @end
 
-@implementation ViewController
+@implementation MainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
