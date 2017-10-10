@@ -10,4 +10,9 @@
 
 @interface BaseViewController : UIViewController
 
+// 显示提示信息方法
+- (void)showMessage:(NSString *)message;
+// 提示语弹窗
+- (void)showAlertWithTitle:(NSString *)title Message:(NSString *)message;
+
 @end

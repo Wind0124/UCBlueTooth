@@ -7,6 +7,7 @@
 //
 
 #import "BaseViewController.h"
+#import "MBProgressHUD.h"
 
 @interface BaseViewController ()
 
@@ -19,19 +20,35 @@
     // Do any additional setup after loading the view.
 }
 
+// 显示提示信息方法
+- (void)showMessage:(NSString *)message {
+    UIWindow * window = [UIApplication sharedApplication].keyWindow;
+    MBProgressHUD* hud = [[MBProgressHUD alloc] initWithView:window];
+    [window addSubview:hud];
+    hud.mode = MBProgressHUDModeText;
+    hud.detailsLabel.font = [UIFont systemFontOfSize:15.0f];
+    hud.detailsLabel.text = message;
+    [hud showAnimated:YES];
+    [hud hideAnimated:YES afterDelay:1.0f];
+}
+
+// 提示语弹窗
+- (void)showAlertWithTitle:(NSString *)title Message:(NSString *)message {
+    UIAlertController *alertCtl = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"" style:UIAlertActionStyleCancel handler:nil];
+    [alertCtl addAction:cancelAction];
+    
+    UIAlertAction *confirmAction = [UIAlertAction actionWithTitle:@"" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    [alertCtl addAction:confirmAction];
+    [self presentViewController:alertCtl animated:YES completion:nil];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
