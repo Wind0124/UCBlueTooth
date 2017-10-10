@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A237505D1F8C980000400BA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A237505C1F8C980000400BA2 /* AppDelegate.m */; };
+		A23750601F8C980100400BA2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A237505F1F8C980100400BA2 /* ViewController.m */; };
+		A23750631F8C980100400BA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A23750611F8C980100400BA2 /* Main.storyboard */; };
+		A23750661F8C980100400BA2 /* UCBlueTooth.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A23750641F8C980100400BA2 /* UCBlueTooth.xcdatamodeld */; };
+		A23750681F8C980100400BA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A23750671F8C980100400BA2 /* Assets.xcassets */; };
+		A237506B1F8C980100400BA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A23750691F8C980100400BA2 /* LaunchScreen.storyboard */; };
+		A237506E1F8C980100400BA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A237506D1F8C980100400BA2 /* main.m */; };
+		A23750781F8C980100400BA2 /* UCBlueToothTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A23750771F8C980100400BA2 /* UCBlueToothTests.m */; };
+		A23750831F8C980100400BA2 /* UCBlueToothUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A23750821F8C980100400BA2 /* UCBlueToothUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A23750741F8C980100400BA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A23750501F8C980000400BA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A23750571F8C980000400BA2;
+			remoteInfo = UCBlueTooth;
+		};
+		A237507F1F8C980100400BA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A23750501F8C980000400BA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A23750571F8C980000400BA2;
+			remoteInfo = UCBlueTooth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A23750581F8C980000400BA2 /* UCBlueTooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UCBlueTooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A237505B1F8C980000400BA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A237505C1F8C980000400BA2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A237505E1F8C980000400BA2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A237505F1F8C980100400BA2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A23750621F8C980100400BA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A23750651F8C980100400BA2 /* UCBlueTooth.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UCBlueTooth.xcdatamodel; sourceTree = "<group>"; };
+		A23750671F8C980100400BA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A237506A1F8C980100400BA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A237506C1F8C980100400BA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A237506D1F8C980100400BA2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A23750731F8C980100400BA2 /* UCBlueToothTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UCBlueToothTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A23750771F8C980100400BA2 /* UCBlueToothTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UCBlueToothTests.m; sourceTree = "<group>"; };
+		A23750791F8C980100400BA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A237507E1F8C980100400BA2 /* UCBlueToothUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UCBlueToothUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A23750821F8C980100400BA2 /* UCBlueToothUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UCBlueToothUITests.m; sourceTree = "<group>"; };
+		A23750841F8C980100400BA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A23750551F8C980000400BA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A23750701F8C980100400BA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A237507B1F8C980100400BA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A237504F1F8C980000400BA2 = {
+			isa = PBXGroup;
+			children = (
+				A237505A1F8C980000400BA2 /* UCBlueTooth */,
+				A23750761F8C980100400BA2 /* UCBlueToothTests */,
+				A23750811F8C980100400BA2 /* UCBlueToothUITests */,
+				A23750591F8C980000400BA2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A23750591F8C980000400BA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A23750581F8C980000400BA2 /* UCBlueTooth.app */,
+				A23750731F8C980100400BA2 /* UCBlueToothTests.xctest */,
+				A237507E1F8C980100400BA2 /* UCBlueToothUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A237505A1F8C980000400BA2 /* UCBlueTooth */ = {
+			isa = PBXGroup;
+			children = (
+				A237505B1F8C980000400BA2 /* AppDelegate.h */,
+				A237505C1F8C980000400BA2 /* AppDelegate.m */,
+				A237505E1F8C980000400BA2 /* ViewController.h */,
+				A237505F1F8C980100400BA2 /* ViewController.m */,
+				A23750611F8C980100400BA2 /* Main.storyboard */,
+				A23750671F8C980100400BA2 /* Assets.xcassets */,
+				A23750691F8C980100400BA2 /* LaunchScreen.storyboard */,
+				A237506C1F8C980100400BA2 /* Info.plist */,
+				A237506D1F8C980100400BA2 /* main.m */,
+				A23750641F8C980100400BA2 /* UCBlueTooth.xcdatamodeld */,
+			);
+			path = UCBlueTooth;
+			sourceTree = "<group>";
+		};
+		A23750761F8C980100400BA2 /* UCBlueToothTests */ = {
+			isa = PBXGroup;
+			children = (
+				A23750771F8C980100400BA2 /* UCBlueToothTests.m */,
+				A23750791F8C980100400BA2 /* Info.plist */,
+			);
+			path = UCBlueToothTests;
+			sourceTree = "<group>";
+		};
+		A23750811F8C980100400BA2 /* UCBlueToothUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A23750821F8C980100400BA2 /* UCBlueToothUITests.m */,
+				A23750841F8C980100400BA2 /* Info.plist */,
+			);
+			path = UCBlueToothUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A23750571F8C980000400BA2 /* UCBlueTooth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A23750871F8C980100400BA2 /* Build configuration list for PBXNativeTarget "UCBlueTooth" */;
+			buildPhases = (
+				A23750541F8C980000400BA2 /* Sources */,
+				A23750551F8C980000400BA2 /* Frameworks */,
+				A23750561F8C980000400BA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UCBlueTooth;
+			productName = UCBlueTooth;
+			productReference = A23750581F8C980000400BA2 /* UCBlueTooth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A23750721F8C980100400BA2 /* UCBlueToothTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A237508A1F8C980100400BA2 /* Build configuration list for PBXNativeTarget "UCBlueToothTests" */;
+			buildPhases = (
+				A237506F1F8C980100400BA2 /* Sources */,
+				A23750701F8C980100400BA2 /* Frameworks */,
+				A23750711F8C980100400BA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A23750751F8C980100400BA2 /* PBXTargetDependency */,
+			);
+			name = UCBlueToothTests;
+			productName = UCBlueToothTests;
+			productReference = A23750731F8C980100400BA2 /* UCBlueToothTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A237507D1F8C980100400BA2 /* UCBlueToothUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A237508D1F8C980100400BA2 /* Build configuration list for PBXNativeTarget "UCBlueToothUITests" */;
+			buildPhases = (
+				A237507A1F8C980100400BA2 /* Sources */,
+				A237507B1F8C980100400BA2 /* Frameworks */,
+				A237507C1F8C980100400BA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A23750801F8C980100400BA2 /* PBXTargetDependency */,
+			);
+			name = UCBlueToothUITests;
+			productName = UCBlueToothUITests;
+			productReference = A237507E1F8C980100400BA2 /* UCBlueToothUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A23750501F8C980000400BA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Wind;
+				TargetAttributes = {
+					A23750571F8C980000400BA2 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					A23750721F8C980100400BA2 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A23750571F8C980000400BA2;
+					};
+					A237507D1F8C980100400BA2 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A23750571F8C980000400BA2;
+					};
+				};
+			};
+			buildConfigurationList = A23750531F8C980000400BA2 /* Build configuration list for PBXProject "UCBlueTooth" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A237504F1F8C980000400BA2;
+			productRefGroup = A23750591F8C980000400BA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A23750571F8C980000400BA2 /* UCBlueTooth */,
+				A23750721F8C980100400BA2 /* UCBlueToothTests */,
+				A237507D1F8C980100400BA2 /* UCBlueToothUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A23750561F8C980000400BA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A237506B1F8C980100400BA2 /* LaunchScreen.storyboard in Resources */,
+				A23750681F8C980100400BA2 /* Assets.xcassets in Resources */,
+				A23750631F8C980100400BA2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A23750711F8C980100400BA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A237507C1F8C980100400BA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A23750541F8C980000400BA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23750601F8C980100400BA2 /* ViewController.m in Sources */,
+				A23750661F8C980100400BA2 /* UCBlueTooth.xcdatamodeld in Sources */,
+				A237506E1F8C980100400BA2 /* main.m in Sources */,
+				A237505D1F8C980000400BA2 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A237506F1F8C980100400BA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23750781F8C980100400BA2 /* UCBlueToothTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A237507A1F8C980100400BA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23750831F8C980100400BA2 /* UCBlueToothUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A23750751F8C980100400BA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A23750571F8C980000400BA2 /* UCBlueTooth */;
+			targetProxy = A23750741F8C980100400BA2 /* PBXContainerItemProxy */;
+		};
+		A23750801F8C980100400BA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A23750571F8C980000400BA2 /* UCBlueTooth */;
+			targetProxy = A237507F1F8C980100400BA2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A23750611F8C980100400BA2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A23750621F8C980100400BA2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A23750691F8C980100400BA2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A237506A1F8C980100400BA2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A23750851F8C980100400BA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A23750861F8C980100400BA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A23750881F8C980100400BA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7MN57NBAB;
+				INFOPLIST_FILE = UCBlueTooth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.usacent.test.UCBlueTooth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A23750891F8C980100400BA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7MN57NBAB;
+				INFOPLIST_FILE = UCBlueTooth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.usacent.test.UCBlueTooth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A237508B1F8C980100400BA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7MN57NBAB;
+				INFOPLIST_FILE = UCBlueToothTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.usacent.test.UCBlueToothTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UCBlueTooth.app/UCBlueTooth";
+			};
+			name = Debug;
+		};
+		A237508C1F8C980100400BA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7MN57NBAB;
+				INFOPLIST_FILE = UCBlueToothTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.usacent.test.UCBlueToothTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UCBlueTooth.app/UCBlueTooth";
+			};
+			name = Release;
+		};
+		A237508E1F8C980100400BA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7MN57NBAB;
+				INFOPLIST_FILE = UCBlueToothUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.usacent.test.UCBlueToothUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UCBlueTooth;
+			};
+			name = Debug;
+		};
+		A237508F1F8C980100400BA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7MN57NBAB;
+				INFOPLIST_FILE = UCBlueToothUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.usacent.test.UCBlueToothUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UCBlueTooth;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A23750531F8C980000400BA2 /* Build configuration list for PBXProject "UCBlueTooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A23750851F8C980100400BA2 /* Debug */,
+				A23750861F8C980100400BA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A23750871F8C980100400BA2 /* Build configuration list for PBXNativeTarget "UCBlueTooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A23750881F8C980100400BA2 /* Debug */,
+				A23750891F8C980100400BA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A237508A1F8C980100400BA2 /* Build configuration list for PBXNativeTarget "UCBlueToothTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A237508B1F8C980100400BA2 /* Debug */,
+				A237508C1F8C980100400BA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A237508D1F8C980100400BA2 /* Build configuration list for PBXNativeTarget "UCBlueToothUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A237508E1F8C980100400BA2 /* Debug */,
+				A237508F1F8C980100400BA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A23750641F8C980100400BA2 /* UCBlueTooth.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A23750651F8C980100400BA2 /* UCBlueTooth.xcdatamodel */,
+			);
+			currentVersion = A23750651F8C980100400BA2 /* UCBlueTooth.xcdatamodel */;
+			path = UCBlueTooth.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A23750501F8C980000400BA2 /* Project object */;
+}
