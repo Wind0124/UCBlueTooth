@@ -1,19 +1,20 @@
 //
-//  CUPopView.m
+//  UCPopView.m
+//  UCBlueTooth
 //
-//  Created by Wind on 2017/10/10.
+//  Created by Wind on 2017/10/11.
 //  Copyright © 2017年 Wind. All rights reserved.
 //
 
-#import "CUPopView.h"
+#import "UCPopView.h"
 
-@interface CUPopView ()
+@interface UCPopView ()
 
 @property (nonatomic, copy) void (^dismissBlock)(void);
 
 @end
 
-@implementation CUPopView
+@implementation UCPopView
 
 - (void)dealloc {
     self.onDismissBlock = nil;
@@ -91,5 +92,13 @@
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
     return [super pointInside:point withEvent:event];
 }
+
+/*
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect {
+    // Drawing code
+}
+*/
 
 @end

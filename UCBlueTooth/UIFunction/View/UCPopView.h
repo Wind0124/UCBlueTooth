@@ -1,13 +1,14 @@
 //
-//  CUPopView.h
+//  UCPopView.h
+//  UCBlueTooth
 //
-//  Created by Wind on 2017/10/10.
+//  Created by Wind on 2017/10/11.
 //  Copyright © 2017年 Wind. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface CUPopView : UIView
+@interface UCPopView : UIView
 
 // 是否显示
 @property (nonatomic, readonly) BOOL isShowing;

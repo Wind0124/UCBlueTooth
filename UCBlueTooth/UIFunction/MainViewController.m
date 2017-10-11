@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "AlertPopView.h"
 
 @interface MainViewController ()<UINavigationControllerDelegate>
 
@@ -22,6 +23,15 @@
     NSLog(@"abc");
 //    NSLog(@"%@",self.babyBluetooth);
     
+}
+
+- (IBAction)show:(UIButton *)sender {
+    AlertPopView * popView = [[AlertPopView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    popView.infoString = @"Default Message";
+    [popView show];
+    popView.alertPopViewBlock = ^(BOOL isClosed) {
+        
+    };
 }
 
 - (void)didReceiveMemoryWarning {

@@ -20,6 +20,8 @@
 		A23750781F8C980100400BA2 /* UCBlueToothTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A23750771F8C980100400BA2 /* UCBlueToothTests.m */; };
 		A23750831F8C980100400BA2 /* UCBlueToothUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A23750821F8C980100400BA2 /* UCBlueToothUITests.m */; };
 		A237509A1F8CA1A100400BA2 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A23750991F8CA1A100400BA2 /* BaseViewController.m */; };
+		A24B1D271F8DC8440089A8BB /* AlertPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = A24B1D261F8DC8440089A8BB /* AlertPopView.m */; };
+		A24B1D2A1F8DC8A40089A8BB /* UCPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = A24B1D291F8DC8A40089A8BB /* UCPopView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,10 +68,12 @@
 		A23750981F8CA1A100400BA2 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		A23750991F8CA1A100400BA2 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		A237509B1F8CA40D00400BA2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		A237509C1F8CA9B400400BA2 /* CUPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUPopView.m; sourceTree = "<group>"; };
-		A237509D1F8CA9B400400BA2 /* CUPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUPopView.h; sourceTree = "<group>"; };
 		A237509E1F8CAB0100400BA2 /* HandleTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HandleTool.m; sourceTree = "<group>"; };
 		A237509F1F8CAB0100400BA2 /* HandleTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandleTool.h; sourceTree = "<group>"; };
+		A24B1D251F8DC8440089A8BB /* AlertPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertPopView.h; sourceTree = "<group>"; };
+		A24B1D261F8DC8440089A8BB /* AlertPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertPopView.m; sourceTree = "<group>"; };
+		A24B1D281F8DC8A40089A8BB /* UCPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UCPopView.h; sourceTree = "<group>"; };
+		A24B1D291F8DC8A40089A8BB /* UCPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UCPopView.m; sourceTree = "<group>"; };
 		A531F373DED1FFF3AEE7AAA6 /* Pods-UCBlueTooth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCBlueTooth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UCBlueTooth/Pods-UCBlueTooth.debug.xcconfig"; sourceTree = "<group>"; };
 		C1506FA2FDF8B44B42F2AAD7 /* Pods-UCBlueTooth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCBlueTooth.release.xcconfig"; path = "Pods/Target Support Files/Pods-UCBlueTooth/Pods-UCBlueTooth.release.xcconfig"; sourceTree = "<group>"; };
 		F106FC37FFEEC7F52CEB111F /* Pods-UCBlueToothUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCBlueToothUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UCBlueToothUITests/Pods-UCBlueToothUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -211,8 +215,10 @@
 		A23750971F8CA14F00400BA2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A237509D1F8CA9B400400BA2 /* CUPopView.h */,
-				A237509C1F8CA9B400400BA2 /* CUPopView.m */,
+				A24B1D281F8DC8A40089A8BB /* UCPopView.h */,
+				A24B1D291F8DC8A40089A8BB /* UCPopView.m */,
+				A24B1D251F8DC8440089A8BB /* AlertPopView.h */,
+				A24B1D261F8DC8440089A8BB /* AlertPopView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -532,11 +538,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A24B1D2A1F8DC8A40089A8BB /* UCPopView.m in Sources */,
 				A23750601F8C980100400BA2 /* MainViewController.m in Sources */,
 				A237509A1F8CA1A100400BA2 /* BaseViewController.m in Sources */,
 				A23750661F8C980100400BA2 /* UCBlueTooth.xcdatamodeld in Sources */,
 				A237506E1F8C980100400BA2 /* main.m in Sources */,
 				A237505D1F8C980000400BA2 /* AppDelegate.m in Sources */,
+				A24B1D271F8DC8440089A8BB /* AlertPopView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
