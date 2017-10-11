@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="98" id="KGk-i7-Jjw" customClass="BluetoothCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notconnect" highlightedImage="connect" translatesAutoresizingMaskIntoConstraints="NO" id="II6-3e-9SV">
+                        <rect key="frame" x="335" y="15" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="DK2-ig-8Fp"/>
+                            <constraint firstAttribute="width" constant="20" id="x15-TR-vFs"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Connected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n05-hz-PS8">
+                        <rect key="frame" x="225" y="16.5" width="100" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="mOV-aq-NP9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAl-hv-haP">
+                        <rect key="frame" x="10" y="16.5" width="205" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OjR-yO-X4O">
+                        <rect key="frame" x="10" y="48.5" width="355" height="1"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="7xo-1N-YvU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WAl-hv-haP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="0F9-Ss-YJ4"/>
+                    <constraint firstAttribute="trailing" secondItem="II6-3e-9SV" secondAttribute="trailing" constant="20" id="0th-8L-Hen"/>
+                    <constraint firstItem="WAl-hv-haP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7mQ-qA-ZkY"/>
+                    <constraint firstItem="OjR-yO-X4O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="O5C-NA-DE4"/>
+                    <constraint firstItem="II6-3e-9SV" firstAttribute="leading" secondItem="n05-hz-PS8" secondAttribute="trailing" constant="10" id="dnI-ea-yCa"/>
+                    <constraint firstAttribute="bottom" secondItem="OjR-yO-X4O" secondAttribute="bottom" id="fEl-MB-TJ6"/>
+                    <constraint firstItem="II6-3e-9SV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="jxX-Jb-ZO4"/>
+                    <constraint firstItem="n05-hz-PS8" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="oIP-qv-3Tx"/>
+                    <constraint firstAttribute="trailing" secondItem="OjR-yO-X4O" secondAttribute="trailing" constant="10" id="rkJ-T7-8ad"/>
+                    <constraint firstItem="n05-hz-PS8" firstAttribute="leading" secondItem="WAl-hv-haP" secondAttribute="trailing" constant="10" id="xnK-2z-ndT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="deviceNameLabel" destination="WAl-hv-haP" id="68Z-ys-1Lc"/>
+                <outlet property="statusImageView" destination="II6-3e-9SV" id="Uz8-aq-pMG"/>
+                <outlet property="statusLabel" destination="n05-hz-PS8" id="SEW-Jx-3Th"/>
+            </connections>
+            <point key="canvasLocation" x="45.5" y="79"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="connect" width="13" height="10"/>
+        <image name="notconnect" width="17" height="17"/>
+    </resources>
+</document>

@@ -8,6 +8,7 @@
 
 #import "MainVC.h"
 #import "AlertPopView.h"
+#import "BluetoothVC.h"
 
 @interface MainVC ()<UINavigationControllerDelegate>
 
@@ -25,6 +26,7 @@
     
 }
 
+// 默认基本弹窗类型
 - (IBAction)show:(UIButton *)sender {
     AlertPopView * popView = [[AlertPopView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     popView.infoString = @"Default Message";
@@ -32,6 +34,13 @@
     popView.alertPopViewBlock = ^(BOOL isClosed) {
         
     };
+}
+
+// 进入蓝牙搜索页面
+- (IBAction)BluetoothListAction:(UIButton *)sender {
+    BluetoothVC *bluetoothVC = [[BluetoothVC alloc] init];
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"back" style:UIBarButtonItemStylePlain target:nil action:nil];
+    [self.navigationController pushViewController:bluetoothVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

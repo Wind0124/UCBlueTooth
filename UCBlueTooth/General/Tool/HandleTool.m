@@ -1,17 +1,14 @@
 //
 //  HandleTool.m
+//  UCBlueTooth
 //
-//  Created by Wind on 2017/10/10.
+//  Created by Wind on 2017/10/11.
 //  Copyright © 2017年 Wind. All rights reserved.
 //
 
 #import "HandleTool.h"
 #import <UIKit/UIKit.h>
 #import <UserNotifications/UserNotifications.h> // iOS10.0 本地通知
-
-@interface HandleTool()
-
-@end
 
 @implementation HandleTool
 

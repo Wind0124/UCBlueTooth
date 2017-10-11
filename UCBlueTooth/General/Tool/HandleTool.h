@@ -1,14 +1,14 @@
 //
 //  HandleTool.h
+//  UCBlueTooth
 //
-//  Created by Wind on 2017/10/10.
+//  Created by Wind on 2017/10/11.
 //  Copyright © 2017年 Wind. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
 @interface HandleTool : NSObject
-
 
 + (NSData *)sendCMD:(Byte)cmd contentString:(NSString *)contentString;
 + (NSData *)sendCMD:(Byte)cmd contentData:(NSData *)contentData;

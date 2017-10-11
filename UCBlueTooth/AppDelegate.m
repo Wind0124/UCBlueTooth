@@ -17,6 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    // 修改状态栏颜色
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     return YES;
 }
 
@@ -46,10 +48,10 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
-//    [self saveContext];
+    [self saveContext];
 }
 
-/*
+
 #pragma mark - Core Data stack
 
 @synthesize persistentContainer = _persistentContainer;
@@ -93,5 +95,5 @@
         abort();
     }
 }
-*/
+
 @end
