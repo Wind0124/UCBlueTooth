@@ -186,6 +186,7 @@
 				A23750991F8CA1A100400BA2 /* BaseViewController.m */,
 				A237505E1F8C980000400BA2 /* MainViewController.h */,
 				A237505F1F8C980100400BA2 /* MainViewController.m */,
+				A23750971F8CA14F00400BA2 /* View */,
 			);
 			path = UIFunction;
 			sourceTree = "<group>";
@@ -193,19 +194,18 @@
 		A23750941F8C9CBD00400BA2 /* General */ = {
 			isa = PBXGroup;
 			children = (
-				A23750971F8CA14F00400BA2 /* View */,
-				A23750951F8C9CE500400BA2 /* Model */,
+				A23750951F8C9CE500400BA2 /* Tool */,
 			);
 			path = General;
 			sourceTree = "<group>";
 		};
-		A23750951F8C9CE500400BA2 /* Model */ = {
+		A23750951F8C9CE500400BA2 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
 				A237509F1F8CAB0100400BA2 /* HandleTool.h */,
 				A237509E1F8CAB0100400BA2 /* HandleTool.m */,
 			);
-			path = Model;
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		A23750971F8CA14F00400BA2 /* View */ = {
@@ -704,6 +704,7 @@
 				DEVELOPMENT_TEAM = X7MN57NBAB;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/UCBlueTooth/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/UCBlueTooth/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.usacent.test.UCBlueTooth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -720,6 +721,7 @@
 				DEVELOPMENT_TEAM = X7MN57NBAB;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/UCBlueTooth/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/UCBlueTooth/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.usacent.test.UCBlueTooth;
 				PRODUCT_NAME = "$(TARGET_NAME)";

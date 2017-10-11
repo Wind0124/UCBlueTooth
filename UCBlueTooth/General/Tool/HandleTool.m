@@ -1,20 +1,15 @@
 //
 //  HandleTool.m
-//  BlazerBLE
 //
-//  Created by SongMenglong on 2017/6/8.
-//  Copyright © 2017年 SongMengLong. All rights reserved.
+//  Created by Wind on 2017/10/10.
+//  Copyright © 2017年 Wind. All rights reserved.
 //
 
 #import "HandleTool.h"
 #import <UIKit/UIKit.h>
-#import <AudioToolbox/AudioToolbox.h> // 铃声和振动
-#import <AVFoundation/AVFoundation.h> // 音频文件
 #import <UserNotifications/UserNotifications.h> // iOS10.0 本地通知
 
-@interface HandleTool()<AVAudioPlayerDelegate>
-
-@property (nonatomic, strong) AVAudioPlayer *audioPlayer;
+@interface HandleTool()
 
 @end
 
@@ -211,7 +206,6 @@
     } else {
         boolValueByte = 0x00; //off
     }
-    
     return [NSData dataWithBytes:&boolValueByte length:sizeof(boolValueByte)];
 }
 
@@ -240,25 +234,6 @@
         // 2.执行通知
         [[UIApplication sharedApplication] scheduleLocalNotification:localNote];
     }
-//    if ([[UIDevice currentDevice].systemVersion floatValue] >= 10.0) {
-//        // iOS10以后的本地通知
-//        // 使用 UNUserNotificationCenter 来管理通知
-//        UNUserNotificationCenter* center = [UNUserNotificationCenter currentNotificationCenter];
-//
-//        //需创建一个包含待通知内容的 UNMutableNotificationContent 对象，注意不是 UNNotificationContent ,此对象为不可变对象。
-//        UNMutableNotificationContent* content = [[UNMutableNotificationContent alloc] init];
-//        content.title = [NSString localizedUserNotificationStringForKey:message arguments:nil];
-//        content.sound = [UNNotificationSound defaultSound];
-//        // 在 设定时间 后推送本地推送
-//        UNTimeIntervalNotificationTrigger* trigger = [UNTimeIntervalNotificationTrigger
-//                                                      triggerWithTimeInterval:1 repeats:NO];
-//        UNNotificationRequest* request = [UNNotificationRequest requestWithIdentifier:@"FiveSecond"
-//                                                                              content:content trigger:trigger];
-//        //添加推送成功后的处理！
-//        [center addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
-//
-//        }];
-//    }
 }
 
 @end

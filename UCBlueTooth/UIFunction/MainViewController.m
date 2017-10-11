@@ -8,7 +8,7 @@
 
 #import "MainViewController.h"
 
-@interface MainViewController ()
+@interface MainViewController ()<UINavigationControllerDelegate>
 
 @end
 
@@ -17,9 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self showMessage:@"abc"];
+    // 打开，隐藏tabbar
+    self.navigationController.delegate = self;
+    NSLog(@"abc");
+//    NSLog(@"%@",self.babyBluetooth);
+    
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

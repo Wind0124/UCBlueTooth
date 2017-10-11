@@ -1,9 +1,8 @@
 //
 //  HandleTool.h
-//  BlazerBLE
 //
-//  Created by SongMenglong on 2017/6/8.
-//  Copyright © 2017年 SongMengLong. All rights reserved.
+//  Created by Wind on 2017/10/10.
+//  Copyright © 2017年 Wind. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -12,13 +11,11 @@
 
 
 + (NSData *)sendCMD:(Byte)cmd contentString:(NSString *)contentString;
-
++ (NSData *)sendCMD:(Byte)cmd contentData:(NSData *)contentData;
+// 将十进制数字字符串转换成十六进制的byte数组
 + (NSData *)convertStringToHex:(NSString *)tmpid;
-
 // 转换button的ID到十六进制
 + (NSData *)convertButtonTagToHex:(NSInteger)buttontag;
-
-+ (NSData *)sendCMD:(Byte)cmd contentData:(NSData *)contentData;
 // bool值 转换成data
 + (NSData *)boolValueConvertToHex:(BOOL)boolValue;
 // 求和校验

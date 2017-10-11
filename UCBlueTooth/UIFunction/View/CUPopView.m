@@ -1,6 +1,5 @@
 //
 //  CUPopView.m
-//  BlazerBLE
 //
 //  Created by Wind on 2017/10/10.
 //  Copyright © 2017年 Wind. All rights reserved.
@@ -50,7 +49,7 @@
     [keywindow addSubview:self];
     [keywindow endEditing:YES];
     
-    self.center = CGPointMake(keywindow.bounds.size.width/2.0f, keywindow.bounds.size.height/2.0f);
+    self.center = CGPointMake(keywindow.bounds.size.width / 2.0f, keywindow.bounds.size.height / 2.0f);
     
     [self fadeIn];
 }
@@ -68,15 +67,14 @@
 - (void)fadeIn {
     self.transform = CGAffineTransformMakeScale(0.8, 0.8);
     self.alpha = 0;
-    [UIView animateWithDuration:.25 animations:^{
+    [UIView animateWithDuration:0.25 animations:^{
         self.alpha = 1;
         self.transform = CGAffineTransformMakeScale(1, 1);
     }];
-    
 }
 
 - (void)fadeOut {
-    [UIView animateWithDuration:.35 animations:^{
+    [UIView animateWithDuration:0.35 animations:^{
         self.alpha = 0.0;
     } completion:^(BOOL finished) {
         if (finished) {
@@ -90,17 +88,8 @@
 }
 
 #define mark - UITouch
-- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
-{
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
     return [super pointInside:point withEvent:event];
 }
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
 
 @end
