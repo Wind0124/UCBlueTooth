@@ -14,8 +14,6 @@
 + (NSData *)sendCMD:(Byte)cmd contentData:(NSData *)contentData;
 // 将十进制数字字符串转换成十六进制的byte数组
 + (NSData *)convertStringToHex:(NSString *)tmpid;
-// 转换button的ID到十六进制
-+ (NSData *)convertButtonTagToHex:(NSInteger)buttontag;
 // bool值 转换成data
 + (NSData *)boolValueConvertToHex:(BOOL)boolValue;
 // 求和校验

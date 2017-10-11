@@ -158,46 +158,6 @@
     return [NSString stringWithUTF8String:ndigit];
 }
 
-+ (NSData *)convertButtonTagToHex:(NSInteger)buttontag {
-    if (buttontag == 0) {
-        return NULL;
-    }
-    // 创建一个字节
-    Byte buttonTagByte;
-    switch (buttontag) {
-        case 407:
-            buttonTagByte = 0x07;
-            break;
-        case 401:
-            buttonTagByte = 0x01;
-            break;
-        case 406:
-            buttonTagByte = 0x06;
-            break;
-        case 405:
-            buttonTagByte = 0x05;
-            break;
-        /*
-        case 408:
-            buttonTagByte = 0x08;
-            break;
-        case 404:
-            buttonTagByte = 0x04;
-            break;
-        case 403:
-            buttonTagByte = 0x03;
-            break;
-        case 402:
-            buttonTagByte = 0x02;
-            break;
-        */
-        default:
-            break;
-    }
-    // 返回Data
-    return [NSData dataWithBytes:&buttonTagByte length:sizeof(buttonTagByte)];
-}
-
 // 布尔值返回 十六进制
 + (NSData *)boolValueConvertToHex:(BOOL)boolValue {
     Byte boolValueByte;
