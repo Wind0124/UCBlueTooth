@@ -1,19 +1,19 @@
 //
-//  MainViewController.m
+//  MainVC.m
 //  UCBlueTooth
 //
 //  Created by Wind on 2017/10/10.
 //  Copyright © 2017年 Wind. All rights reserved.
 //
 
-#import "MainViewController.h"
+#import "MainVC.h"
 #import "AlertPopView.h"
 
-@interface MainViewController ()<UINavigationControllerDelegate>
+@interface MainVC ()<UINavigationControllerDelegate>
 
 @end
 
-@implementation MainViewController
+@implementation MainVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -1,5 +1,5 @@
 //
-//  MainViewController.h
+//  MainVC.h
 //  UCBlueTooth
 //
 //  Created by Wind on 2017/10/10.
@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
+#import "BaseVC.h"
 
-@interface MainViewController : BaseViewController
+@interface MainVC : BaseVC
 
 
 @end

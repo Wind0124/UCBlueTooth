@@ -1,5 +1,5 @@
 //
-//  BaseViewController.h
+//  BaseVC.h
 //  UCBlueTooth
 //
 //  Created by Wind on 2017/10/10.
@@ -10,7 +10,7 @@
 #import "BabyBluetooth.h"
 #import "MBProgressHUD.h"
 
-@interface BaseViewController : UIViewController
+@interface BaseVC : UIViewController
 
 @property (nonatomic, strong) BabyBluetooth *babyBluetooth;
 @property (nonatomic, strong) CBPeripheral *peripheral;

@@ -1,18 +1,18 @@
 //
-//  BaseViewController.m
+//  BaseVC.m
 //  UCBlueTooth
 //
 //  Created by Wind on 2017/10/10.
 //  Copyright © 2017年 Wind. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "BaseVC.h"
 
-@interface BaseViewController ()
+@interface BaseVC ()
 
 @end
 
-@implementation BaseViewController
+@implementation BaseVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
